@@ -14,6 +14,7 @@ function draw() {
   
   //rotating the hour hand
   hrAngle = map(hr%12,0,12,0,360);
+  arc(0,0,100,50,0,hrAngle);
   push();
   angleMode(CENTER);
   rotate(hrAngle);
@@ -24,6 +25,7 @@ function draw() {
 
   //rotating the minute hand
   minAngle = map(min,0,60,0,360);
+  arc(0,0,100,50,0,minAngle);
   push();
   angleMode(CENTER);
   rotate(minAngle);
@@ -33,7 +35,8 @@ function draw() {
   pop();
 
   //rotating the second hand
-  secAngle = map(sec,0,60,0,360); 
+  secAngle = map(sec,0,60,0,360);
+  arc(0,0,100,50,0,secAngle);
   push();
   angleMode(CENTER);
   rotate(secAngle);
